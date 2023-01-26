@@ -1,4 +1,4 @@
-# program which accepts the radius of a circle from the user and computes teh area
+8# program which accepts the radius of a circle from the user and computes teh area
 radius = float(input('Enter the radius of the circle: '))
 print("The radius of the circle is " ,radius)
 area = (22/7)*(radius**2)
