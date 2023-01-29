@@ -30,6 +30,7 @@ for page_num in range(1,page_num_MAX):
     hotel_dict["address"] = hotel.find("span", {"itemprop": "streetAddress"}).text
     hotel_dict["price"] = hotel.find("span", {"class": "listingPrice__finalPrice"}).text
     
+    # try....except
     try:
       hotel_dict["rating"] = hotel.find("span", {"class": "hotelRating__ratingSummary"}).text
     except AttributeError:
